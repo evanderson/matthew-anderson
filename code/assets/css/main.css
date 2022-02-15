@@ -1688,3 +1688,7 @@ body.is-preload-0 #footer {
   margin-bottom: 1rem;
   max-width: 275px;
 }
+
+.avatar {
+  max-width: 100%;
+}
