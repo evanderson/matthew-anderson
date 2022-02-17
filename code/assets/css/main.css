@@ -1572,7 +1572,7 @@ button:disabled,
 
 @media screen and (max-width: 480px) {
   .panel > .content {
-    padding: 2em 1.5em;
+    padding: 2em 1.5em 0;
   }
 }
 
