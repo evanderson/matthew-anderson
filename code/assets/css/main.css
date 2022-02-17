@@ -175,6 +175,7 @@ textarea {
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -184,7 +185,7 @@ html {
 }
 
 body {
-  background: #f4f4f4;
+  background: #fbeee2;
 }
 
 body.is-preload-0 *,
@@ -1508,7 +1509,7 @@ button:disabled,
   }
 
   .panel > .content {
-    padding: 3em 2.5em;
+    padding: 3em 2.5em 0;
   }
 }
 
@@ -1526,8 +1527,7 @@ button:disabled,
   }
 
   .panel > .content {
-    display: block;
-    padding: 3em;
+    padding: 3em 3em 0;
     width: 100%;
   }
 
@@ -1562,7 +1562,7 @@ button:disabled,
   }
 
   .panel > .content {
-    padding: 2em;
+    padding: 2em 2em 0;
   }
 
   .panel.special > .content > .inner > :nth-child(n + 2):nth-last-child(n + 2) {
@@ -1690,5 +1690,6 @@ body.is-preload-0 #footer {
 }
 
 .avatar {
-  max-width: 100%;
+  max-width: 50%;
+  margin: auto;
 }

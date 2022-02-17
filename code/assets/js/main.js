@@ -38,6 +38,7 @@
   // Animated links.
   $animatedLinks.on("click", function (event) {
     var href = $(this).attr("href");
+    var id = $(this).attr("id");
 
     // Not a panel link? Bail.
     if (
@@ -49,6 +50,11 @@
     // Prevent default.
     event.preventDefault();
     event.stopPropagation();
+
+    if (id === "contact-button") {
+      window.scrollTo(0, document.body.scrollHeight);
+      return;
+    }
 
     // Change panels.
     window.location.hash = "";
