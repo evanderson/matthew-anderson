@@ -1693,3 +1693,11 @@ body.is-preload-0 #footer {
   max-width: 50%;
   margin: auto;
 }
+
+.sr-only {
+  font-size: 0;
+}
+
+.branding {
+  max-width: 100%;
+}
