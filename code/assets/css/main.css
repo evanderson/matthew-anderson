@@ -1691,7 +1691,7 @@ body.is-preload-0 #footer {
 
 .avatar {
   max-width: 50%;
-  margin: auto;
+  margin: auto auto 0;
 }
 
 .icons--contact {
