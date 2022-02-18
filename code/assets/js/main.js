@@ -51,10 +51,10 @@
     event.preventDefault();
     event.stopPropagation();
 
-    if (id === "contact-button") {
-      window.scrollTo(0, document.body.scrollHeight);
-      return;
-    }
+    // if (id === "contact-button") {
+    //   window.scrollTo(0, document.body.scrollHeight);
+    //   return;
+    // }
 
     // Change panels.
     window.location.hash = "";

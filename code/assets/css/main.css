@@ -185,7 +185,7 @@ html {
 }
 
 body {
-  background: #f1f1f1;
+  background: #fff;
 }
 
 body.is-preload-0 *,
@@ -1694,8 +1694,8 @@ body.is-preload-0 #footer {
   margin: auto;
 }
 
-.sr-only {
-  font-size: 0;
+.icons--contact {
+  text-align: center;
 }
 
 .branding {
