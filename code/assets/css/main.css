@@ -1383,14 +1383,15 @@ button:disabled,
   -webkit-transition: -webkit-transform 0.5s ease;
   -ms-transition: -ms-transform 0.5s ease;
   transition: transform 0.5s ease;
-  background-color: #777;
+  /* background-color: #777;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   border-radius: 0;
   min-height: 50em;
   width: 50%;
   z-index: 1;
+  overflow: hidden;
 }
 
 /* .panel > .image img {
@@ -1403,11 +1404,9 @@ button:disabled,
 } */
 
 .home__image {
-  height: 100%;
-  width: 100%;
-  background-position: center;
+  background-image: url(../../images/matthew-h-anderson.jpg);
   background-size: cover;
-  background: url(../../images/matthew-h-anderson.jpg);
+  background-position: center;
 }
 
 .about__image::before {
@@ -1419,6 +1418,7 @@ button:disabled,
   background-position: center;
   background-size: cover;
   filter: blur(20px);
+  transform: scale(1.1);
 }
 
 .about__image img {
@@ -1718,7 +1718,8 @@ body.is-preload-0 #footer {
 
 .avatar {
   max-width: 50%;
-  margin: auto auto 0;
+  margin: 1rem auto 0;
+  display: block;
 }
 
 .icons--contact {
