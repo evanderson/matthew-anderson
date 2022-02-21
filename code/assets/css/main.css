@@ -1393,13 +1393,40 @@ button:disabled,
   z-index: 1;
 }
 
-.panel > .image img {
+/* .panel > .image img {
   border-radius: 0;
   display: block;
   height: 100%;
   object-fit: cover;
   object-position: center;
   width: 100%;
+} */
+
+.home__image {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background: url(../../images/matthew-h-anderson.jpg);
+}
+
+.about__image::before {
+  content: "";
+  background: url(../../images/wine-country.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  filter: blur(20px);
+}
+
+.about__image img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 0;
 }
 
 .panel > .content {
@@ -1700,4 +1727,13 @@ body.is-preload-0 #footer {
 
 .branding {
   max-width: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }

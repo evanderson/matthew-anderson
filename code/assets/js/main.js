@@ -68,21 +68,21 @@
   var locked = true;
 
   // Fix images.
-  $panels.each(function () {
-    var $this = $(this),
-      $image = $this.children(".image"),
-      $img = $image.find("img"),
-      position = $img.data("position");
+  // $panels.each(function () {
+  //   var $this = $(this),
+  //     $image = $this.children(".image"),
+  //     $img = $image.find("img"),
+  //     position = $img.data("position");
 
-    // Set background.
-    $image.css("background-image", "url(" + $img.attr("src") + ")");
+  //   // Set background.
+  //   $image.css("background-image", "url(" + $img.attr("src") + ")");
 
-    // Set position (if set).
-    if (position) $image.css("background-position", position);
+  //   // Set position (if set).
+  //   if (position) $image.css("background-position", position);
 
-    // Hide original.
-    $img.hide();
-  });
+  //   // Hide original.
+  //   $img.hide();
+  // });
 
   // Unlock after a delay.
   window.setTimeout(function () {
