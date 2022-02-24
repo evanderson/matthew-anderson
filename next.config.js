@@ -1,4 +1,4 @@
-module.exports = {
+const nextConfig = {
   headers: async () => {
     return [
       {
@@ -29,3 +29,5 @@ module.exports = {
   poweredByHeader: false,
   target: "serverless",
 };
+
+module.exports = nextConfig;
